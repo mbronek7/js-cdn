@@ -5,6 +5,5 @@ function send_to_app_monitor(data, url){
   var shouldBeAsync = true;
   request.open(method, url, shouldBeAsync);
   request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  request.send(data);
+  request.send(JSON.stringify(data));
 }
-

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+
+<button type="button" onclick="send_to_app_monitor({
+  'type': 'custom',
+  'name': 'add_product_to_cart',
+  'data': `product_id: 23`,
+  'app_token': '123123123',
+}, 'http://localhost:3000/app_events/new')">Request data</button>
+
+<p id="demo"></p>
+ 
+<script src="https://cdn.jsdelivr.net/gh/mbronek7/js-cdn/app-monitor.js"></script>
+
+</body>
+</html>
+

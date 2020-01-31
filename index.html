@@ -2,15 +2,15 @@
 <html>
 <body>
 
-<h1>The XMLHttpRequest Object</h1>
+<h1>App Monitor Example</h1>
 
 
 <button type="button" onclick="send_to_app_monitor({
   'type': 'custom',
-  'name': 'add_product_to_cart',
-  'data': `product_id: 23`,
+  'name': 'new_user_registered',
+  'data': `Test B`,
   'app_token': '123123123',
-}, 'http://localhost:3000/app_events/new')">Request data</button>
+}, 'http://localhost:3000/app_events/new')">Send Event</button>
 
 <p id="demo"></p>
  
